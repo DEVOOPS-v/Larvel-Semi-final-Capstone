@@ -21,9 +21,10 @@ class AppointmentsController extends Controller
                             ->get(); 
 
         // 2. Pass the data to the appointments index view (pages/index.blade.php).
-        return view('pages.index', [
-            'appointments' => $appointments
-        ]);
+        // return view('pages.index', [
+        //     'appointments' => $appointments
+        // ]);
+        return view('pages.index', compact('appointments'));
     }
     
     // You would add methods like 'create', 'store', 'show', 'edit', 'update', and 'destroy' here.

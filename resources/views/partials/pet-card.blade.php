@@ -1,3 +1,56 @@
+<style>
+    /* 1. KEYFRAMES */
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px) rotate(-10deg);
+        }
+        50% {
+            transform: translateY(-8px) rotate(-5deg);
+        }
+    }
+
+    @keyframes fade-in-up {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* KEYFRAME FOR CARDS: FADE-IN AND SCALE UP - More pronounced effect */
+    @keyframes fade-in-scale {
+        0% {
+            opacity: 0;
+            transform: translateY(30px) scale(0.95); 
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1); 
+        }
+    }
+
+    /* 2. ANIMATION CLASSES */
+    .animate-float {
+        animation: float 5s ease-in-out infinite;
+    }
+    .animate-fade-up {
+        /* Used for the overall section header */
+        animation: fade-in-up 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards; 
+    }
+    .animate-fade-scale {
+        /* Used for the individual cards with staggering */
+        animation: fade-in-scale 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    }
+
+    /* Utility class to hide elements before animation starts */
+    .invisible-element {
+        opacity: 0;
+    }
+</style>
+
 {{-- 🐶 Section 1: Hero Section (Shop in our Pet Store) --}}
     <div class="relative overflow-hidden" style="background-color: #ffff; min-height: 70vh;">
         <div class="container mx-auto flex flex-col md:flex-row items-center">

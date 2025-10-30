@@ -61,49 +61,6 @@
     
 </style>
 
-<!-- ============================================== -->
-<!-- NAV BAR (FIXED AND SLIGHTLY IMPROVED) -->
-<!-- ============================================== -->
-{{-- <nav x-data="{ scrolled: false }" 
-     x-on:scroll.window="scrolled = window.scrollY > 100"
-     :class="{ 
-        'shadow-xl': scrolled, 
-        'shadow-sm': !scrolled
-     }"
-     class="fixed top-0 left-0 w-full z-50 
-            transition-all duration-300 ease-in-out 
-            bg-white/95 backdrop-blur-md px-6 md:px-12 lg:px-20 py-4 
-            /* Ensures navbar fades in quickly */
-            opacity-0 animate-fade-up transform translate-y-0" 
-            style="animation-delay: 0.1s;">
-     
-    <div class="flex justify-between items-center w-full max-w-7xl mx-auto"> 
-        <div class="text-2xl font-bold text-purple-800">
-            VetSync<span class="text-purple-400">.</span>
-        </div>
-
-        <ul class="hidden lg:flex space-x-8 text-gray-700 font-medium">
-            <li><a href="#" class="hover:text-purple-600 transition duration-200">Home</a></li>
-            <li><a href="#mission-statement" class="hover:text-purple-600 transition duration-200">About Us</a></li>
-            <li><a href="#" class="hover:text-purple-600 transition duration-200">Services</a></li>
-            <li><a href="#" class="hover:text-purple-600 transition duration-200">Contact Us</a></li>
-        </ul>
-
-        <div class="flex items-center space-x-4">
-            <a href="#" class="hidden sm:block text-purple-600 hover:text-purple-800 transition duration-200">
-                <i data-lucide="shopping-cart" class="w-6 h-6"></i>
-            </a>
-
-            <!-- Smoother CTA button -->
-            <a href="#" class="flex items-center bg-purple-600 text-white px-4 py-2 rounded-full font-semibold space-x-2 
-                        transition duration-300 ease-in-out hover:bg-purple-700 hover:shadow-lg">
-                <i data-lucide="calendar-plus" class="w-5 h-5"></i>
-                <span>Book Appointment</span>
-            </a>
-        </div>
-    </div>
-</nav> --}}
-<!-- Padding for the fixed navbar -->
 <div class="h-[80px]"></div> 
 
 <!-- ============================================== -->
@@ -134,13 +91,13 @@
             <!-- 1. WELCOME BADGE (0.3s) - Adjusted color for better contrast/aesthetic -->
             <span class="px-3 py-1 rounded-full text-sm font-semibold inline-block opacity-0 animate-fade-up" 
                   style="background-color: #9f7aea; color: white; animation-delay: 0.3s;">
-                Vets 
+                Pets
             </span>
             
             <!-- 2. HEADLINE (0.5s) - New text, softer purple -->
             <h1 class="text-6xl lg:text-7xl font-extrabold mt-4 leading-tight tracking-tight opacity-0 animate-fade-up" 
                 style="color: #6b46c1; animation-delay: 0.5s;">
-                Your Trusted Pet Doctors
+                We love to take care for you
             </h1>
             
             <!-- 3. PARAGRAPH (0.7s) - New supporting text -->

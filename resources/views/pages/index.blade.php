@@ -61,16 +61,16 @@
 {{-- Applied the new animation class to the main content wrapper --}}
 <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-10 animate-fade-up">
         <div class="text-center mb-12 animate-fade-up">
-                <p class="text-sm font-medium  uppercase tracking-widest mb-2">Team</p>
+                <p class="text-sm font-medium  uppercase tracking-widest mb-2">View</p>
                 <h2 class="text-4xl md:text-5xl  text-gray-800">
-                    Our Pets
+                    Appointments
                 </h2>
             </div>
     
     <!-- HEADER SECTION: Title and CTA Button -->
-    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 border-b border-gray-200 pb-4">
-        <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">
-            All Clinic Appointments
+    <div class="flex flex-col px-10 sm:flex-row justify-between items-start sm:items-center mb-8 border-b border-gray-200 pb-4">
+        <h1 class="text-3xl text-purple-600 tracking-tight">
+            Clinic Appointments
         </h1>
         
         <!-- Add New Appointment Button (MIXING Bootstrap 'btn' with Tailwind styling) -->
@@ -163,7 +163,7 @@
                 </table>
             @else
                 <!-- Empty State Message (Purple Themed) -->
-                <div class="p-12 text-center bg-gray-50/50">
+                <div class="p-12 text-center animate-fade-up bg-gray-50/50">
                     <svg class="mx-auto h-16 w-16 text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
@@ -176,7 +176,7 @@
                         <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                         </svg>
-                        Schedule Appointment Now
+                        Log in for Appointment
                     </a>
                 </div>
             @endif
