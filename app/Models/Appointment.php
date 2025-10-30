@@ -16,6 +16,9 @@ class Appointment extends Model
         'appointment_date',
         'reason',
     ];
+    protected $casts = [
+        'appointment_date' => 'datetime'
+    ];
 
     public function pet()
     {

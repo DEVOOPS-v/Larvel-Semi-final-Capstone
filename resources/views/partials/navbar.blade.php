@@ -41,9 +41,10 @@
             </div>
 
             <ul class="flex space-x-8 text-gray-700 font-medium">
-                <li><a href="#" class="hover:text-purple-600 nav-link">Home</a></li>
-                <li><a href="#mission-statement" class="hover:text-purple-600 nav-link">About Us</a></li>
-                <li><a href="#" class="hover:text-purple-600 nav-link">Contact Us</a></li>
+                <li><a href="{{ route('home') }}" class="hover:text-purple-600 nav-link">Home</a></li>
+                <li><a href="{{ route('vets.index') }}" class="hover:text-purple-600 nav-link">Vets</a></li>
+                <li><a href="{{ route('pets.index') }}" class="hover:text-purple-600 nav-link">Pets</a></li>
+                <li><a href="{{ route('appointments.index') }}" class="hover:text-purple-600 nav-link">Appointments</a></li>
             </ul>
 
             <div class="flex items-center space-x-4">

@@ -44,17 +44,25 @@
         @yield('content')
     </main>
 
+    <section id="next-section" class="h-96 bg-purple-100 py-24 px-6 md:px-12 flex items-center justify-center">
+    {{-- <h2 class="text-3xl text-gray-600 font-bold">This is the next section content!</h2> --}}
+</section>
+    @include('partials.footer')
+    
+
     <!-- Bootstrap JS Bundle (includes Popper) -->
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> --}}
     <!-- App JS (Vite) -->
     @vite(['resources/js/app.js'])
-w
+
     <!-- Per-page scripts -->
     @stack('scripts')
 
 
+    <script src="//unpkg.com/alpinejs" defer></script>
+<script src="//unpkg.com/@alpinejs/intersect" defer></script>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {{-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> --}}
 
 </body>
 </html>

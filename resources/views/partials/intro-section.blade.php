@@ -6,14 +6,14 @@
              :class="{ 'opacity-100 translate-y-0': visible, 'invisible-scroll': !visible }"
              class="transition duration-700">
             <p class="text-sm font-medium text-gray-500 uppercase tracking-widest mb-2">Intro</p>
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-800">
+            <h2 class="text-4xl md:text-5xl  text-gray-800">
                 Get to know us more
             </h2>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8">
+        <div class="grid grid-cols-3 mda:grid-cols-3 gap-12 lg:gap-8">
             
-            <div x-data="{ card1: false }" x-intersect.once.margin.100px="card1 = true" 
+            <div x-data="{ card1: true }" x-intersect.once.margin.100px="card1 = true" 
                  :class="{ 'opacity-100 translate-y-0': card1, 'invisible-scroll': !card1 }"
                  class="transition duration-700 delay-200 flex flex-col items-center p-6 hover:shadow-lg rounded-xl">
                 
@@ -35,7 +35,7 @@
                 </a>
             </div>
 
-            <div x-data="{ card2: false }" x-intersect.once.margin.100px="card2 = true" 
+            <div x-data="{ card2: true }" x-intersect.once.margin.100px="card2 = true" 
                  :class="{ 'opacity-100 translate-y-0': card2, 'invisible-scroll': !card2 }"
                  class="transition duration-700 delay-300 flex flex-col items-center p-6 hover:shadow-lg rounded-xl">
                 
@@ -57,7 +57,7 @@
                 </a>
             </div>
 
-            <div x-data="{ card3: false }" x-intersect.once.margin.100px="card3 = true" 
+            <div x-data="{ card3: true }" x-intersect.once.margin.100px="card3 = true" 
                  :class="{ 'opacity-100 translate-y-0': card3, 'invisible-scroll': !card3 }"
                  class="transition duration-700 delay-500 flex flex-col items-center p-6 hover:shadow-lg rounded-xl">
                 
